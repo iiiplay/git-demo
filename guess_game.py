@@ -9,24 +9,34 @@ import random
 
 
 start,end=1,100
-count=3
+count=10
 # 產生亂數
 x=random.randint(start, end)    
-# 提示答案
-#print(x)
 
 for i in range(count):
-    y=int(input(f"第{i+1}/{count}次，請猜一個數字({start}~{end}):"))
+    y=int(input(f"第{i+1}/{count}次，請猜一個數字({start}~{end}):"))    
+
+    if y<start or y>end:
+        print("不要亂猜~~~!")
+        continue
+
     
-    # 猜對 + break
     if x==y:
         print("恭喜猜對!")
-        break
+        break    
     
-    # 猜錯
+    # x=>25
+    # y=>10
+
+
     if x>y:
+        if y>start:
+            start=y+1
         print("猜大一點")
     else:
+        if y<end:
+            end=y-1
+
         print("猜小一點")
    
 
