@@ -52,7 +52,7 @@
 - git log
 - git log --oneline
 
-- 資訊過多，按enter，最後按q離開
+- 資訊過多，按enter，可以按q離開
 
 
 ### 分支的概念
@@ -108,6 +108,10 @@
 - ctrl+shift+p 
 - 更改終端機 
 	- default terminal =>cmd.exe 
+
+
+### 重置專案的使用權
+- git remote set-url origin https://iiiplay@github.com/iiiplay/git-demo.git
 
 
 
